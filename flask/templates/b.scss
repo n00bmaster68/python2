@@ -1,0 +1,26 @@
+$color: blue;
+ h3{
+ 	color: $color;
+ }
+ h4{
+ 	color: $color;
+ }
+ %message
+ {
+ 	font-size:15px;
+ 	font-family: sans-serif;
+ 	font-weight: bold;
+ 	padding: 20px;
+ 	margin: 20px;
+ 	border: 1px solid blue;
+ }
+ .success
+ {
+ 	@extend %message;
+ 	background-color: green; 
+ }
+ .fail
+ {
+ 	@extend %message;
+ 	background-color: red;
+ }

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NAME LIST</title>
+	<style>
+		li
+		{
+			text-align: center;
+			color: teal;
+			font-size: 50px;
+			font-weight: bold;
+		}
+		h1
+		{
+			text-align: center;
+			font-size:30;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<h1>NAME LIST</h1>
+	<ul>
+		{% for name in names %}
+		<li>{{ name }}</li>
+		{% endfor %}
+	</ul>
+</body>
+</html>

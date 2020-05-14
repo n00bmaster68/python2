@@ -1,0 +1,21 @@
+h3 {
+  color: blue; }
+
+h4 {
+  color: blue; }
+
+.success, .fail {
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid blue; }
+
+.success {
+  background-color: green; }
+
+.fail {
+  background-color: red; }
+
+/*# sourceMappingURL=vari.css.map */

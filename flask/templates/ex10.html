@@ -1,0 +1,26 @@
+{% extends "ktLAYOUT.html" %}
+
+{% block title %}
+	FLIGHTS
+{% endblock %}
+
+{% block body %}
+<h1>BOOK A FLIGHT</h1>
+<form action="{{ url_for('book') }}" method="post">
+	<div class="form-group">
+		<select class="form-control" name="flight_id">
+			{% for flight in flights %}
+				<option value="{{ flight.id }}"> {{ flight.origin }} to {{ flight.desination }} lasting {{ flight.duration }}</option>
+				{% endfor %}
+			</select>
+	</div>
+
+	<div class="form-group">
+		<input class="form-control" name="name" placeholder="PASSENGER NAME">
+	</div>
+
+	<div class="form-group">
+		<button class="btn btn-primary">BOOK FLIGHT</button>
+	</div>
+</form>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "ktLAYOUT.html"  %}
+{% block heading %}
+  NOTES
+{% endblock %}
+
+{% block body %}
+	<ol>
+		{% for note in notes %}
+			<li>{{ note }}</li>
+		{% endfor %}
+	</ol>
+
+	<form action="{{ url_for('index') }}" method="POST">
+		<input type="text" name="note" placeholder="ENTER NOTE HERE">
+		<button>ADD NOTE</button>
+	</form>
+{% endblock %}
